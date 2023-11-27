@@ -1,0 +1,156 @@
+body{
+    position: relative; 
+}
+.container{
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{ 
+    background-color: #FFC017;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav{
+    display: flex;
+    padding:0.8rem 8rem;
+    border-bottom: 1px solid black;
+    align-items: center;
+    font-size: 14px;   
+}
+nav p{
+    display: inline-block;
+    color: black;
+}
+
+nav ul{
+    white-space: nowrap;
+    margin-left: auto;
+}
+nav ul li {
+    display: inline-block;
+    margin:0.7rem;
+}
+button{
+    font-weight: 400;
+    padding: 10px 16px;
+    color: white;
+    overflow: hidden;
+    border-radius: 99em;
+    background: rgba(25, 25, 25, 0.934);
+    border:1px solid black;
+    box-sizing: border-box;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+#tanteM{
+    margin-left: auto;
+}
+header+div{
+    background-color: #FFC017;  
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;    
+}
+#accantoAlleM{
+   margin-left:10rem;
+}
+header+div h2{
+    font-size: 106px;
+    letter-spacing: -0.05em;   
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400; 
+    margin-bottom:2rem ;   
+}
+header+div h3{
+    font-size: 24px;
+    line-height: 24px;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+header+div button{
+    font-size: 20px;
+    width: 213px;
+    padding: 8px 20px;
+}
+#trend{
+    padding-left:10rem;
+    padding-top:4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #E6E7E7;
+}
+#titolo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#titolo h2{
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;  
+}
+
+#articoliTrend{
+    display: flex;    
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.autore{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; 
+    
+}
+.autore img{
+    width:1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    margin-right: 0.7rem; 
+}
+section{
+    display: flex;
+    width: 30%;
+    margin-bottom: 1.5rem;
+    padding-right: 0.8rem;
+}
+section>span{
+    color: #E7E7E6;
+    font-size:2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+section h2{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;   
+}
+
+.autore h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 0.2rem;
+   
+      
+}
+section div span{
+    font-size: 0.9rem;
+    color: #6B6B6B;
+    font-weight: 400;
+   
+}
+.autore>h4{
+    color: #757575;
+}
