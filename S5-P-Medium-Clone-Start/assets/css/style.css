@@ -1,8 +1,7 @@
 body{
     position: relative; 
 }
-.container{
-    
+.container{    
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -11,15 +10,18 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.8s ease;
 }
 
 
 nav{
     display: flex;
-    padding:0.8rem 8rem;
+    padding:0.6rem 8rem;
     border-bottom: 1px solid black;
     align-items: center;
-    font-size: 14px;   
+    font-size: 0.9; 
+    font-weight: 400;  
+    line-height: 1.2rem;
 }
 nav p{
     display: inline-block;
@@ -35,13 +37,14 @@ nav ul li {
     margin:0.7rem;
 }
 button{
-    font-weight: 400;
+    font-weight: bold;
     padding: 10px 16px;
     color: white;
     overflow: hidden;
     border-radius: 99em;
     background: rgba(25, 25, 25, 0.934);
-    border:1px solid black;
+    transition: background-color 0.8s ease;
+    border:none;
     box-sizing: border-box;
     
 }
@@ -90,10 +93,10 @@ header+div button{
     align-items: center;
     margin-bottom: 1rem;
 }
-#titolo h2{
-    font-weight: 600;
+#titolo h2, aside h2{
+    font-weight: bold;
     letter-spacing: 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 0.5rem;  
 }
 
@@ -102,10 +105,15 @@ header+div button{
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.infoTrend{
+    display: flex;
+    align-items: center;
+}
 .autore{
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem; 
+    width: 100%;
     
 }
 .autore img{
@@ -119,12 +127,14 @@ section{
     width: 30%;
     margin-bottom: 1.5rem;
     padding-right: 0.8rem;
+    align-items: flex-start;
+    margin-right: 2rem;
 }
-section>span{
+section span{
     color: #E7E7E6;
     font-size:2rem;
     font-weight: bold;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 section a{
@@ -133,17 +143,16 @@ section a{
     display: flex;
 }
 section h2{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 0.5rem;   
+    margin-bottom: 0.8rem;   
+    line-height: 1.2rem;
 }
 
 .autore h4{
     font-size: 0.9rem;
     font-weight: 600;
-    margin-right: 0.2rem;
-   
-      
+    margin-right: 0.2rem;     
 }
 section div span{
     font-size: 0.9rem;
@@ -153,4 +162,116 @@ section div span{
 }
 .autore>h4{
     color: #757575;
+}
+.articoli{
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+
+}
+.articoli section{
+    flex: 1;
+    width: 100%;
+    
+}
+.articoli section div:first-child{
+   margin-right: 1rem;
+   width: 100%;
+   height: 100%;
+
+}
+.articoli section div:first-child p{
+    color:#757575;
+    margin-top: 0.2rem;
+    font-size:1rem;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.infoArticolo{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.infoArticolo button:last-child{
+   margin-left: auto;
+   
+}
+.articoli section>a:last-child{
+    margin-left: auto;
+}
+.articoli section>a>img:last-child{
+    width: 200px;
+    height: 134px;
+}
+
+.icone{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 0.5rem;
+    padding:0;
+    overflow: hidden;
+    display: inline-flex;    
+}
+.icone:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.secondaParteSito{
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+aside{
+    width: 30%;
+}
+
+aside .categorie{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   font-weight: 500;
+   border-bottom: 1px solid #E6E7E7;
+}
+
+aside h2{
+    margin-bottom: 1rem;
+    margin-left: 0;
+
+}
+.categorie a{
+    padding:0.8rem;
+    border: 1px solid #E6E7E7;
+    border-radius: 8%;
+    margin-bottom: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+footer ul {
+    list-style: none; 
+    padding: 0; 
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+footer ul li{
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+footer ul li a, aside a{
+    text-decoration: none;
+    color:#807575;
+}
+
+.sticky{
+    transition: background-color 0.8s ease;
+    background-color: white;
+}
+
+.sticky button{
+    transition: background-color 0.8s ease;
+    background-color:green;
 }
