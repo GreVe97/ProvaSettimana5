@@ -275,3 +275,7 @@ footer ul li a, aside a{
     transition: background-color 0.8s ease;
     background-color:green;
 }
+
+.sticky button:hover{
+    background-color:rgb(8, 101, 8);
+}

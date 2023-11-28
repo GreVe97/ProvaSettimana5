@@ -20,5 +20,5 @@ function mFantasmini() {
     }
 }
 mFantasmini();
-setInterval(mFantasmini, 50); 
+setInterval(mFantasmini, 200); 
 
