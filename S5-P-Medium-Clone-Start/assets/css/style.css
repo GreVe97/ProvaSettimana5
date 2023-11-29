@@ -5,7 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-header{ 
+header{     
     background-color: #FFC017;
     position: sticky;
     top: 0;
@@ -21,7 +21,6 @@ nav{
     align-items: center;
     font-size: 0.9; 
     font-weight: 400;  
-    line-height: 1.2rem;
 }
 nav p{
     display: inline-block;
@@ -53,6 +52,7 @@ button:hover{
     background-color: black;
 }
 #tanteM{
+    height: 100%;
     margin-left: auto;
 }
 header+div{
@@ -278,4 +278,8 @@ footer ul li a, aside a{
 
 .sticky button:hover{
     background-color:rgb(8, 101, 8);
+}
+
+@media screen {
+    
 }

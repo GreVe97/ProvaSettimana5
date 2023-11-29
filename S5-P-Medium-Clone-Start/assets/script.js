@@ -11,8 +11,16 @@ window.addEventListener('scroll', function () {
 });
 
 function mFantasmini() {
-    let mmm = document.querySelectorAll('g[opacity]');
+    let mmm = document.querySelectorAll('g[stroke-linecap="butt"]');
+   for (let i =0;i<20;i++){
+    console.log(i);
+    console.log(mmm[i]);
+
+   }
     let n = Math.floor(Math.random() * mmm.length-1)+1;
+    console.log(mmm[n]);
+    console.log(n);
+    console.log(mmm[n].attributes.opacity.value);
     if(mmm[n].attributes.opacity.value==1){
         mmm[n].attributes.opacity.value=0
     }else{
@@ -20,5 +28,5 @@ function mFantasmini() {
     }
 }
 mFantasmini();
-setInterval(mFantasmini, 200); 
-
+setInterval(mFantasmini, 100); 
+ 
